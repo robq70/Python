@@ -1,1 +1,1 @@
-print
+q["correct_answer"]

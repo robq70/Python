@@ -1,4 +1,3 @@
-
 class Person:
     def __init__(self, name, surname, city):
         self.name = name
@@ -7,8 +6,7 @@ class Person:
         print("Person constructor!")
 
     def printPersonData(self):
-        print("Person.printPersonData: ", self.name, 
-                self.surname, self.city)
+        print("Person.printPersonData: ", self.name, self.surname, self.city)
 
 
 person1 = Person("Ola", "Kowalska", "Krk")
@@ -24,7 +22,14 @@ class Employee(Person):
         print("Employee constructor!")
 
     def printEmployeeData(self):
-        print("Employee.printEmployeeData: ", self.name, self.surname, self.companyName, self.salary)
+        print(
+            "Employee.printEmployeeData: ",
+            self.name,
+            self.surname,
+            self.companyName,
+            self.salary,
+        )
+
 
 print()
 employee1 = Employee("Kasia", "Kot", "Waw", "Tech Ltd", 10000)
@@ -43,7 +48,8 @@ class Manager(Employee):
 
     def printManagerData(self):
         print("Manager data:", self.name, self.surname, self.department)
-        
+
+
 print()
 manager1 = Manager("Ania", "X", "Waw", "Tech2 Ltd", 15000, "IT")
 manager1.printPersonData()

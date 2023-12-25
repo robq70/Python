@@ -1,4 +1,3 @@
-
 class Vehicle:
     def __init__(self, brand, name):
         self.brand = brand
@@ -7,8 +6,9 @@ class Vehicle:
         self.numWheels = 4
 
     def printVehicleInfo(self):
-        print("printVehicleInfo: ", self.brand, self.name
-                , self.topSpeed, self.numWheels)
+        print(
+            "printVehicleInfo: ", self.brand, self.name, self.topSpeed, self.numWheels
+        )
 
     def printNumWheels(self):
         print("Vehicle.numWheels:", self.numWheels)
@@ -17,15 +17,21 @@ class Vehicle:
 vehicle1 = Vehicle("Vehicle", "basic")
 vehicle1.printVehicleInfo()
 
+
 class Car(Vehicle):
     def printCarInfo(self):
         self.topSpeed = 230
-        print("printCarInfo: ", self.brand, self.name, 
-                self.topSpeed, self.numWheels)
+        print("printCarInfo: ", self.brand, self.name, self.topSpeed, self.numWheels)
 
     def printVehicleInfo(self):
-        print("Car.printVehicleInfo: ", self.brand, self.name
-                , self.topSpeed, self.numWheels)
+        print(
+            "Car.printVehicleInfo: ",
+            self.brand,
+            self.name,
+            self.topSpeed,
+            self.numWheels,
+        )
+
 
 car1 = Car("Ford", "Mustang")
 car1.printCarInfo()
@@ -38,9 +44,8 @@ class SuperCar(Car):
         self.topSpeed = 301
         print("Super car reached 300!")
 
+
 superCar1 = SuperCar("Ford", "GT")
 superCar1.reachSpeed300()
 superCar1.printVehicleInfo()
 superCar1.printNumWheels()
-
-
