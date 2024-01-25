@@ -1,8 +1,7 @@
-
 class Websites:
     def __init__(self, filename):
         self.filename = filename
-        self.fileList = [] # lista słowników
+        self.fileList = []  # lista słowników
         self.reportList = []
         self.index = 0
         self.loadFile(filename)
@@ -13,11 +12,10 @@ class Websites:
 
         for v in dataList:
             v = "https://" + v.strip()
-            data = { "website" : v, "statusCode" : -1 }
+            data = {"website": v, "statusCode": -1}
             self.fileList.append(data)
             data["index"] = len(self.fileList) - 1
-            #print(data)
-
+            # print(data)
 
     def getNextWebsiteToCheck(self):
         if self.index >= len(self.fileList):
@@ -33,14 +31,13 @@ class Websites:
             self.reportList.append(data)
         else:
             print("Bad keys in report: " + str(data))
-        
 
     def saveReport(self):
         fh = open("report.txt", "w")
 
         for el in self.reportList:
             print(el)
-            fh.write( str(el["website"]) + " - " + str(el) + " \n" )
+            fh.write(str(el["website"]) + " - " + str(el) + " \n")
 
         fh.close()
-        print("Report saved") 
+        print("Report saved")

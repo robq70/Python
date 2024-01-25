@@ -1,12 +1,11 @@
-import validators
+def iloczyn(*arg):
+    ilocz = 1
+    for x in arg:
+        ilocz *= x
+    # return ilocz
+    print(ilocz)
 
 
-def valPhone(number):
-    if len(number) == 11:
-        return number[0] == "4" and number[1] == "8" and number.isdigit()
-    else:
-        return False
-
-
-phoneInput = "48793101252"
-print(valPhone(phoneInput))
+iloczyn(2, 4, 5)
+iloczyn(2, 4, 5, 6)
+iloczyn(*range(6))
