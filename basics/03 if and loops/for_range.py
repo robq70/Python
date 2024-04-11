@@ -23,12 +23,3 @@ for n in range(0, 300, 3):
     sum += n
 
 print("Suma liczb od 0 do 300, co 3:", sum)
-
-
-
-
-
-
-
-
-

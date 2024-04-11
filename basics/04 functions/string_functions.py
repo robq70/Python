@@ -46,7 +46,7 @@ print( "-|".join( ["Ala","Ola","Adam"] ) )
 
 print( "Hello World".lower() )
 print( "Hello World".upper() )
-print( "Hello World".swapcase() )
+print( "Hello Worlddddddddddd".swapcase() )
 
 print( "   \n \t Hello World \n\n \t ".lstrip() ) 
 print( "   \n \t Hello World \n\n \t ".rstrip() ) 

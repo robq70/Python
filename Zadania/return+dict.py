@@ -2,7 +2,7 @@
 # 1) Stwórz funkcję createUser z parametrami:
 #    - name
 #    - contact
-# 2) W ciele funkcji stwórz zmienną user w której będzie
+# 2) W ciele funkcji stwórz zmienną user w której będzie 
 #    słownik reprezentujący użytkownika. Dodaj do słownika
 #    nazwę użytkownika z parametru.
 # 3) Parametr contact będzie mógł przyjąć tekst lub liczbę.

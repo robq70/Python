@@ -1,5 +1,6 @@
 import turtle
 
+
 class Snake:
     UP = "up"
     DOWN = "down"
@@ -16,7 +17,7 @@ class Snake:
     def refresh(self):
         print("snake reset")
         for seg in self.segments:
-            seg.goto(2000,2000)
+            seg.goto(2000, 2000)
         self.segments.clear()
 
         self.segments = []
@@ -29,7 +30,7 @@ class Snake:
         t.hideturtle()
         t.penup()
         t.speed(0)
-        t.goto(x,y)
+        t.goto(x, y)
         t.color("red")
         t.showturtle()
         self.segments.append(t)
@@ -37,7 +38,6 @@ class Snake:
     def extend(self):
         self.addSegment(1000, 1000)
 
-    
     def keyUp(self):
         self.direction = Snake.UP
 
@@ -72,7 +72,6 @@ class Snake:
 
         self.head.goto(headX, headY)
 
-    
     def checkSelfCollision(self):
         for seg in self.segments:
             if seg == self.head:
